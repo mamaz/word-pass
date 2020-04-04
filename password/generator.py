@@ -3,8 +3,8 @@ import sys
 from pathlib import Path
 from typing import List
 
-def generate_password(length: int = 4) -> str:
-    path = str(Path(__file__).parent) + "/common_words_en.txt"
+def generate_password(length: int = 4, language: str = "en") -> str:
+    path = str(Path(__file__).parent) + f"/common_words_{language}.txt"
     words = read_all(path)
 
     password = ""
@@ -24,7 +24,4 @@ def read_all(file_path: str) -> List[str]:
                 line = file.readline()
         return result
     except:
-        print("error read file", sys.exc_info()[0])
-
-if __name__ == "__main__":
-    print(generate_password())
+        print("error reading file", sys.exc_info()[0])
