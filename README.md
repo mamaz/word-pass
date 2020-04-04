@@ -1,6 +1,10 @@
 # An XKCD style password generator with meaningful words
 
+Based on XKCD [#936](https://xkcd.com/936/)
+
 It's still work in progress
+
+I plan to create more easy to remember words, right now it's still random.
 
 ## Usage
 
