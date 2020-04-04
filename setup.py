@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="mamaz",
+    name="word-pass",
     version="1.0.0",
     author="mamaz",
     author_email="hisma.mulya@gmail.com",
